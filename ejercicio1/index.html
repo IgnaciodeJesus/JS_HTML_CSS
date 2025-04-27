@@ -1,0 +1,78 @@
+<!-- Para recrear el inicio de un archivo html recuerden "!" + Tab -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Ejercicio1</title>
+
+
+    <!-- Bootstrap CSS -->
+    <!-- https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/ejercicio1/style.css">
+
+    <!-- -->
+
+</head>
+
+<body class="bg-light text-dark"> <!-- https://getbootstrap.com/docs/4.0/utilities/colors/ -->
+    <div class="container py-5"> <!--https://getbootstrap.com/docs/5.2/layout/containers/-->  <!-- https://getbootstrap.com/docs/5.2/examples/grid/#containers -->
+      <h1 class="mb-5 text-center">Contacto</h1> <!-- mb significa margin bottom (es para aumentar el espaciado inferior de un elemento)-->
+  
+      <!-- Formulario -->
+      <form id="contactForm" novalidate> <!-- https://getbootstrap.com/docs/5.0/forms/validation/#custom-styles -->
+        <!-- Nombre -->
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Ingresa tu nombre"
+          />
+          <!-- Mensaje de error -->
+          <div id="nameError" class="invalid-feedback"></div> <!-- https://getbootstrap.com/docs/4.0/components/forms/#custom-styles  -->
+        </div>
+  
+        <!-- Correo Electrónico -->
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="ejemplo@dominio.com"
+          />
+          <div id="emailError" class="invalid-feedback"></div>
+        </div>
+  
+        <!-- Mensaje -->
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="4"
+            placeholder="Escribe tu mensaje"
+          ></textarea>
+          <div id="messageError" class="invalid-feedback"></div>
+        </div>
+  
+        <!-- Botón de envío -->
+        <button type="submit" class="btn btn-primary w-100">Enviar</button> <!-- Los posibles valores de w son multiplos de 25 -->
+      </form>
+    </div>
+  
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/ejercicio1/script.js"></script>
+
+    <!--  -->
+
+  </body>
+
+</html>

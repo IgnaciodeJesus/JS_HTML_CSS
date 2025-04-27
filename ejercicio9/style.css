@@ -1,0 +1,8 @@
+.cell {
+    height: 100px;            /* Alto fijo solicitado */
+    font-size: 2.5rem;        /* Tamaño de la X / O (1 rem = 16px, 0.5 rem = 8px) */
+    display: flex;            /* Flexbox para centrar el contenido */
+    align-items: center;      /* Centrado vertical */
+    justify-content: center;  /* Centrado horizontal */
+    user-select: none;        /* Evita seleccionar texto al hacer click */
+  }
